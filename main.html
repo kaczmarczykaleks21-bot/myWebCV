@@ -10,18 +10,99 @@
     <body>
         <div class="container">
             <header>
-                <span class="headerLeftSide"><h1>aleks.dev</h1></span>
+                <span class="headerLeftSide"><h1 class="mainPage">AleksDev</h1></span>
                 <span class="headerCenter"></span>
                 <span class="headerRightSide">
-                    <button>Dane osobowe</button>
-                    <button>Profil zawodowy</button>
-                    <button>Doświadczenie zawodowe</button>
-                    <button>Wykształcenie</button>
-                    <button>Umiejętności</button>
+                    <button onclick="changeMainWindow()">Dane</button>
+                    <button onclick="changeMainWindow()">Profil zawodowy</button>
+                    <button onclick="changeMainWindow()">Doświadczenie</button>
+                    <button onclick="changeMainWindow()">Wykształcenie</button>
+                    <button onclick="changeMainWindow()">Umiejętności</button>
                 </span>                
             </header>
-            <main><h2>Aleks Kaczmarczyk</h2></main>
-            <footer><a href="">Kontakt </a><a href=""> Klauzula RODO</a></footer>
+            <main>
+                <div class="menuGlowne">
+                <h2>Aleks Kaczmarczyk</h2>
+                </div>
+                <div class="dane hidden">
+                    <hr>
+                    <h1 class="h1Center">Dane osobowe:</h1>
+                    <hr>
+                    <h2>Aleks Kaczmarczyk</h2>
+                    <h3>e-maile:</h3>
+                    <p>Główny email: Kaczmarczykaleks21@gmail.com</p>
+                    <p>"Uczelniany" email: akaczma2@stu.vistula.edu.pl</p>
+                    <p>Dodatkowy email: alekskaczmarczyk24@gmail.com</p>
+                    <h3>Data urodzenia:</h3>
+                    <p>21 Czerwca 2004r</p>                    
+                    <h3>Miejsce zamieszkania</h3>
+                    <p>Wierzbica, Powiat legionowski, Województwo Mazowieckie</p>
+                </div>
+                <div class="profilZawodowy hidden">
+                    <hr>
+                    <h1 class="h1Center">Profil zawodowy</h1>
+                    <hr>
+                    <h3>Zawód:</h3>
+                    <p>Web developer</p>
+                    <h3>Kluczowe Umiejetnosci:</h3>
+                    <p>Znajomość Html/Css i Javascript</p>
+                    <h3>Jakiego stanowiska szukam:</h3>
+                    <p>Aktualnie szukam praktyk, na których będe mogł się jak najlepiej rozwijać</p>
+                </div>
+                <div class="doswiadczenie hidden">
+                    <hr>
+                    <h1 class="h1Center">Doświadczenie</h1>
+                    <hr>
+                    <p>Na chwilę obecną nie mam doświadczenia zawodowego w informatyce</p>
+                    <p>Inne prace jakich się podejmowałem nie miały nic wspólnego z programowaniem</p>
+                </div>
+                <div class="wyksztalcenie hidden">
+                    <hr>
+                    <h1 class="h1Center">Wykształcenie</h1>
+                    <hr>
+                    <h3>Aktualna nauka:</h3>
+                    <p>Aktualnie jestem w trakcie trzeciego roku studiowania informatyki na uczelni Vistula w Warszawie na Ursynowie. Zostało mi ostatnie 1,5 roku ( z 3,5 rocznych studiów)</p>
+                    <p>Dodatkowo jestem w trakcie kursu z JavaScript</p>
+                    <h3>Ukończone szkoły:</h3>
+                    <p>Szkoła podstawowa w serocku im.Mikołaja Kopernika</p>
+                    <p>Drugie Liceum ogólnokształcące w Legionowie im. Jana III Sobieskiego</p>
+                    <h3>Języki obce:</h3>
+                    <p>Angielski poziom C1</p>
+                </div>
+                <div class="Umiejetnosci hidden">
+                    <hr>
+                    <h1 class="h1Center">Umiejętnosci</h1>
+                    <hr>
+                    <h3>Twarde umiejętności:</h3>
+                    <ul>
+                        <li>Html/CSS - Ukończenie darmowego kursu na Udemy.com</li>
+                        <li>JavaScript - kurs(71h nauki) - w trakcie, aktualnie ukończyłem 32% czyli: 
+                            <ul>
+                                <li>Sekcja 2 i 3 kursu: znam podstawy JavaScriptu, </li>
+                                <li>Sekcja 7 kursu: potrafie manipulować elementami html/css przy użyciu JavaScriptu, </li>
+                                <li>Sekcja 8 kursu: mam rozeznanie działa silnik JavaScriptu</li>
+                            </ul>
+                        <li>Używanie z pozycji strony internetowej Githuba, w połączeniu z Visual Studio Code - w razie potrzeby mam również darmowy kurs z Gita/Githuba, z którego szybko moge nadrobić braki</li>
+                        <li>Bardzo dobra Znajomość angielskiego - C1</li>
+                    </ul>
+                    <h3>Miękkie umiejętności:</h3>
+                    <ul>
+                        <li>Zdeterminowanie i chęci do nauki</li>
+                        <li>Otwartość na feedback</li>
+                        <li>Umiejętność organizacja pracy przy użyciu np. tablic trello</li>
+                        <li>Umiejętność jasnego i skutecznego komunikowania się</li>
+                        <li>Zaangażowanie</li>
+                        <li>Pracowitość - nie lubie nic nie robić, a już zwłaszcza w pracy, w której chce się rozwijać</li>
+                    </ul>
+                    <h3>Linki do kursów:</h3>
+                    <ul>
+                        <li><a target="_blank" href="https://www.udemy.com/share/101wOM3@-fSs2TR39XF4_y38kFY_vtJXgm39n4UsgO81F2zZJXpTiAOk36iRucdznixln-vjpQ==/>Html/CSS">Html/CSS</a></li>
+                        <li><a target="_blank" href="https://www.udemy.com/share/101Wfe3@emKGt2tuOPW3ACig0yma9pSNFMDT85mmSgw9QxhzwM3MLKAUDERerxQnl9Jza1XK4w==/">JavaScript</a></li>
+                        <li><a target="_blank" href="https://www.udemy.com/share/101qOE3@8ilCyF8Qlh7Eu3F_-baAUmQWohvvBlEba_XRIw8T-cI40uFJNerXE-YQVEhIayiXZA==/">Git/Github</a></li>
+                    </ul>
+                </div>
+            </main>
+            <footer><a href="/html/oMnie.html">O mnie</a><a href="/html/kontakt.html">Kontakt</a><a href="/html/RODO.html">Klauzula RODO</a></footer>
         </div>
     </body>
     <script src="script.js"></script>
