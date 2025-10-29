@@ -6,19 +6,6 @@ body {
     color: white;
 }
 
-/* === Zawartość strony === */
-
-.container {
-    display: grid;
-    grid-template-rows: 80px 550px 80px ;
-    grid-template-columns: 1fr 3fr;
-    grid-template-areas: 
-    'header header'
-    'main main'
-    'footer footer'
-    ;
-}
-
 /* === napis AleksDev === */
 
 .mainPage:hover {
@@ -27,15 +14,18 @@ body {
 
 /* === główny nagłówek strony === */
 header {
-    display: flex;
-    grid-area: header;
-    background-color: rgb(19, 19, 19); 
-    border-bottom: solid 4px #1e1e1ec7;
+    display: fixed;
+    background-color: black; 
+    border-bottom: solid 2px #1e1e1ec7;
     padding-left: 60px; 
 }
 
+#header {
+    display: flex;
+}
+
 header button {
-    background-color: rgb(19, 19, 19); 
+    background-color: black; 
     color: white;
     border: none;
     font-size: 1.3rem;
@@ -45,7 +35,7 @@ header button {
 
 
 header button:hover {
-    background-color: rgb(19, 19, 19); 
+    background-color: black; 
     color: white;
     border: none;
     cursor: pointer;
@@ -58,15 +48,17 @@ header button:hover {
 }
 
 .headerCenter {
-    width: 10%;
+    width: 20%;
 }
 
 .headerRightSide {
     display: flex;
-    width: 58%;
+    width: 48%;
     justify-content: center;
     align-items: center;
 }
+
+/* === Nagłówki tekstowe - ogólne === */
 
 h1, h2 {
     color: #39FF14;
@@ -81,27 +73,124 @@ h1, h2 {
 main {
     grid-area: main;
     border: solid 2px #1e1e1ec7;
+    border-top: none;
+    border-bottom: none;
     padding-left: 20px;
 }
 
-/* === Stópka strony === */
 
-footer {
-    grid-area: footer;
-    border: solid 2px #1e1e1ec7;
-    text-align: center;
-    padding: 20px;
+.textContainer {
+    float: left;
+    width: 40%;
+    margin-right: 10px;
 }
 
-footer a{
-    margin: 8px;
+.imageContainer {
+    float: right;
+}
+
+#menuGlowne h1 {
+    font-size: 4rem;
+    font-weight:bold;
+    background: linear-gradient(to right, #2DD310 0%, #FFFFFF 100%);
+    -webkit-background-clip: text;  
+    background-clip: text;         
+    -webkit-text-fill-color: transparent; 
+}
+
+
+#menuGlowne p{
+    font-size: 1.6rem;
+}
+
+#menuGlowne h4{
+    font-size: 1rem;
+}
+
+/* === Zawartość profilu === */ 
+
+#profilZawartosc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#daneOsobiste{
+    background-color: rgb(30, 30, 30);
+    padding: 6px;
+    margin: 6px;    
+    border: solid 2px #39FF14;
+}
+
+#profilZawodowy {
+    background-color: rgb(30, 30, 30);
+    max-width: 600px;
+    padding: 6px;
+    margin: 6px;
+    border: solid 2px #39FF14;
+}
+
+#doswiadczenie div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#doswiadczenie section {
+    background-color: rgb(30, 30, 30);
+    border: solid 2px #39FF14;
+    max-width: 600px;
+    padding: 10px;
+}
+
+
+#wyksztalcenie div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#wyksztalcenie section {
+    background-color: rgb(30, 30, 30);
+    border: solid 2px #39FF14;
+    max-width: 600px;
+    padding: 10px;
+}
+
+
+#umiejetnosci div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#umiejetnosci section {
+    background-color: rgb(30, 30, 30);
+    border: solid 2px #39FF14;
+    max-width: 600px;
+    padding: 10px;
+}
+
+#umiejetnosci h1, h2 {
+    color: #39FF14;
+}
+
+#umiejetnosci h4 {
+    margin-left: 20px;
+}
+
+/* === Hyperlinki === */
+
+a{
     color: blue;
 }
 
-footer a:hover{
-    color: rgb(10, 10, 200);
-    cursor: pointer;
-}
+/* === Ukryta Klasa - do chowania elementów === */
 
 .hidden {
     display: none;
