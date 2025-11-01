@@ -14,7 +14,10 @@ body {
 
 /* === główny nagłówek strony === */
 header {
-    display: fixed;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     background-color: black; 
     border-bottom: solid 2px #1e1e1ec7;
     padding-left: 60px; 
@@ -71,7 +74,7 @@ h1, h2 {
 /* === Część główna strony === */
 
 main {
-    grid-area: main;
+    margin-top: 82px;
     border: solid 2px #1e1e1ec7;
     border-top: none;
     border-bottom: none;
@@ -111,23 +114,24 @@ main {
 
 #profilZawartosc {
     display: flex;
+    flex: 1;
     justify-content: center;
-    align-items: center;
     margin-left: auto;
     margin-right: auto;
 }
 
 #daneOsobiste{
+    flex: 1;
     background-color: rgb(30, 30, 30);
-    padding: 6px;
+    padding: 10px;
     margin: 6px;    
     border: solid 2px #39FF14;
 }
 
 #profilZawodowy {
+    flex: 1;
     background-color: rgb(30, 30, 30);
-    max-width: 600px;
-    padding: 6px;
+    padding: 10px;
     margin: 6px;
     border: solid 2px #39FF14;
 }
@@ -136,13 +140,11 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
 }
 
 #doswiadczenie section {
     background-color: rgb(30, 30, 30);
     border: solid 2px #39FF14;
-    max-width: 600px;
     padding: 10px;
 }
 
@@ -161,12 +163,18 @@ main {
     padding: 10px;
 }
 
+#wyksztalcenie section h3 , #umiejetnosci section h3{
+    color: #8d34f3;
+  }
 
 #umiejetnosci div {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    text-indent: 1px;
+    word-spacing: 1px;
+    line-height: 1.2;
 }
 
 #umiejetnosci section {
@@ -186,8 +194,20 @@ main {
 
 /* === Hyperlinki === */
 
-a{
+#menuGlowne a{
+    color: white;
+}
+
+#menuGlowne a:hover {
     color: blue;
+}
+
+a {
+    color: blue;
+}
+
+a:hover {
+    color: rgb(12, 12, 208);
 }
 
 /* === Ukryta Klasa - do chowania elementów === */
